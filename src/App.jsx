@@ -1,6 +1,12 @@
-import './styles/global.css';
+import { RepositoryList } from './components/RepositoryList';
+import { Counter } from './components/Counter';
+import './styles/global.scss';
 
 export function App(){
-    throw new Error('erro');
-    return <h1> Hello World!</h1>
+    return (
+        <>
+        <RepositoryList />
+        <Counter />
+        </>
+    )
 }
