@@ -9,14 +9,13 @@ interface RepositoryItemProps {
 export function RepositoryItem(props: RepositoryItemProps) {
     return (
         <li>
-        <strong>{props.repository.name }</strong>
-        <p>{props.repository.description}</p>
+            <strong>{props.repository.name }</strong>
+            <p>{props.repository.description}</p>
 
-        <p>{props.repository}</p>
 
-        <a href={props.repository.html_url}>
-            Acessar repositório
-        </a>
+            <a href={props.repository.html_url}>
+                Acessar repositório
+            </a>
     </li>
     )
 }

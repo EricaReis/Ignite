@@ -5,7 +5,7 @@ import '../styles/repositories.scss'
 
 interface Repository {
     name: string;
-    description: string;
+    description: string;    
     html_url: string;
 }
 
@@ -18,7 +18,7 @@ export function RepositoryList() {
             .then(data => setRepositories(data))
     }, []);
     
-
+    
     return (
         <section className="repository-list">
             <h1>Lista de repositórios</h1>
